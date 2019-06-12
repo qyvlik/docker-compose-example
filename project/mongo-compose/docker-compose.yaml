@@ -1,0 +1,18 @@
+version: '2.2'
+services:
+  mongo:
+    image: mongo:4
+    volumes:
+      - {MONGODB_DATA}:/data/db/
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+      - MONGO_INITDB_DATABASE=admin
+    ports:
+      - "27017:27017"
+    restart: always
+    mem_limit: 2048M
+    mem_reservation: 512M
+
+
+
