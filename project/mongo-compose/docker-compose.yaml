@@ -3,7 +3,7 @@ services:
   mongo:
     image: mongo:4
     volumes:
-      - {MONGODB_DATA}:/data/db/
+      - ${MONGODB_DATA}:/data/db/
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=admin
