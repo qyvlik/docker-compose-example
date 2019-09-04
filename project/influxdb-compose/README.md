@@ -23,3 +23,8 @@ docker-compose exec tsdb influx -host 127.0.0.1 -port 8086 -username admin -pass
 - `SHOW MEASUREMENTS`
 - `SHOW RETENTION POLICIES ON db`
 - `SELECT * FROM some_measurements ORDER BY time DESC LIMIT 3`
+
+---
+
+[InfluxDB Docker logging](https://community.influxdata.com/t/influxdb-docker-logging/4427)
+> try `INFLUXDB_HTTP_LOG_ENABLED=false` and `INFLUXDB_DATA_QUERY_LOG_ENABLED=false`
