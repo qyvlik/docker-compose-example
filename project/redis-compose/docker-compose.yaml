@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  redis:
+    image: redis:4
+    command: redis-server --appendonly yes --aof-use-rdb-preamble yes
+    volumes:
+      - ${REDIS_VOLUMES}:/data
+    ports:
+      - "6379:6379"
