@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  ss-local:
+    image: shadowsocks/shadowsocks-libev
+    command: /usr/bin/ss-local -c /etc/shadowsocks-libev/config.json
+    volumes:
+      - ./ss-local.json:/etc/shadowsocks-libev/config.json
+    ports:
+      - "1080:1080"
+    restart: always
+
+  privoxy:
+    image: vimagick/privoxy
+    volumes:
+      - ./privoxy.config:/etc/privoxy/config
+    ports:
+      - "1087:8118"
+    restart: always
