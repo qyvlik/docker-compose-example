@@ -11,3 +11,7 @@ use http proxy
 ```bash
 curl -x "http://localhost:1087" -I https://www.google.com
 ```
+
+```bash
+curl -x "http://localhost:1087" ipinfo.io
+```
