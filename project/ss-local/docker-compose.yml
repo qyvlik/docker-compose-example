@@ -6,8 +6,8 @@ services:
     command: /usr/bin/ss-local -c /etc/shadowsocks-libev/config.json
     volumes:
       - ./ss-local.json:/etc/shadowsocks-libev/config.json
-    ports:
-      - "1080:1080"
+    # ports:
+    #  - "1080:1080"
     restart: always
 
   privoxy:
