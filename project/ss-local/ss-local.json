@@ -1,0 +1,9 @@
+{
+  "server": "YOUR_SERVER_HOST",
+  "server_port": YOUR_SERVER_PORT,
+  "local_address": "0.0.0.0",
+  "local_port": 1080,
+  "password": "YOUR_SERVER_PASSWORD",
+  "timeout": 300,
+  "method": "aes-256-cfb"
+}
